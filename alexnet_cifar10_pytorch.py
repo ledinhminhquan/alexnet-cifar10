@@ -136,7 +136,7 @@ def train_loop(dataloader, model, loss_fn, optimizer):
             
     train_loss /= num_batches
     acc /= size
-    print(f"Validation: \n Accuracy: {(100*acc):>0.1f}%, Avg loss: {train_loss:>8f} \n")
+    print(f"Training: \n Accuracy: {(100*acc):>0.1f}%, Avg loss: {train_loss:>8f} \n")
     
 def validation_loop(epoch, dataloader, model, loss_fn):
     # Set the model to evaluation mode - important for batch normalization and dropout layers
